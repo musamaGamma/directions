@@ -1,12 +1,15 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Map from "./Map";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   const [location, setLocation] = useState();
   const [userRefusal, setUserRefusal] = useState();
 
+  useEffect(() => {
+    window.ReactNativeWebView.postMessage("hello world from directions api");
+  });
   return (
     <div className="App">
       <Map
