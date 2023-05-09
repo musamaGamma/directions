@@ -21,6 +21,7 @@ const Provider = () => {
     <div>
       {location ? (
         <MapContainer
+          zoomControl={false}
           center={location}
           zoom={13}
           scrollWheelZoom

@@ -34,6 +34,7 @@ export const Home = () => {
       </Paper>
       <Map
         location={location}
+        zoomControl={false}
         setLocation={setLocation}
         setUserRefusal={setUserRefusal}
       />
