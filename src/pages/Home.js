@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Map from "../Map";
 import { Paper } from "@mui/material";
 import PlacesAutoComplete from "../components/PlacesAutoComplete";
+import axios from "axios";
 
 export const Home = () => {
   const [location, setLocation] = useState(null);
